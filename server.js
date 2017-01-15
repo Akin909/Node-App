@@ -22,13 +22,13 @@ app.use((req, res, next) => {
 });
 
 
-app.use((req, res, next) => {
-	res.render('maintenance.hbs',{
-		pageTitle: 'Maintenance Page',
-		content: 'Site is down for maintenance'		
-	});
-});
-
+// app.use((req, res, next) => {
+// 	res.render('maintenance.hbs',{
+// 		pageTitle: 'Maintenance Page',
+// 		content: 'Site is down for maintenance'		
+// 	});
+// });
+//
 
 app.use(express.static(__dirname+'/public'));
 hbs.registerPartials(__dirname+'/views/partials');
