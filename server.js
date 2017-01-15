@@ -40,7 +40,10 @@ hbs.registerHelper('screamIt', (text) => {
 	return text.toUpperCase();
 })
 
-
+app.get('/style.css',(req, res) => {
+	res.send('style.css');
+	res.end();
+})
 
 app.get('/',(req,res) => {
 	res.render('home.hbs',{

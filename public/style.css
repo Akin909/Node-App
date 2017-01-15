@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon');
+
+body{
+    font-family: 'Coming Soon',cursive;
+background: #49BBFF;
+height: 100vh;
+width: 100vw;
+margin-top: 3em;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width 100%;
+    height: 3em;
+    list-style-type: none;
+    background:#E4F1FB; 
+    margin-top: 0;
+
+}
+.menu-items{
+    padding-right: 0.5em;
+    float: right;
+    height: 100%;
+    border-right: solid 0.5px grey;
+    text-align: center;
+    width: 10em
+}
+.menu-items>a{
+    text-decoration: none;
+    color: #3061FC;
+}
+.title{
+text-align: center;
+
+}
+
+.content{
+text-align: center;
+}
+
+.footer{
+text-align: center;
+}
+
+
