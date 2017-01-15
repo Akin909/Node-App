@@ -42,7 +42,6 @@ hbs.registerHelper('screamIt', (text) => {
 
 
 
-
 app.get('/',(req,res) => {
 	res.render('home.hbs',{
 		pageTitle: 'Home Page',
@@ -57,6 +56,16 @@ app.get('/about', (req, res) => {
 		currentYear: new Date().getFullYear()
 	});
 });
+
+app.get('/projects',(req, res) => {
+	res.render('projects.hbs',{
+		pageTitle: 'Projects Page',
+		currentYear: new Date().getFullYear()
+		
+	})
+})
+
+
 
 //error 
 app.get('/error', (req,res) => {
